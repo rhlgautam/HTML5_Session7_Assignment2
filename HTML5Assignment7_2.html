@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML5Assignment7.2</title>
+	<script type="text/javascript" src="Session7_2.js"></script>
+	<style type="text/css">
+		#maindiv{
+			position: absolute;
+			left: 35%;
+			right: 0;	
+		}
+		span{
+			color: Black;
+			font-weight: bold;
+			float: left;
+			width: 100px;
+			margin-right: 5px;
+		}
+		input{
+			margin-bottom: 5px;
+		}
+		button{
+			background-color: green;
+			color: white;
+			padding:5px 10px;
+			margin-left: 50px;
+		}
+		p{
+			background-color: green;
+			color: white;
+			font-weight: bold;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<h1>Welcome to Acadgild!!</h1>
+	<div id="mainDiv">
+		<p id="helper"></p>
+		<form>
+			<span>Name:</span>
+			<input id="nameText" type="text" required="required" onclick="help('username')"><br>
+			<span>Age:</span> 
+			<input type="number" required="required" onclick="help('age')"><br>
+			<span>City:</span>
+			<input type="text" required="required" onclick="help('city')"><br>
+			<button>Submit</button>
+
+		</form>
+	</div>
+</body>
+</html>
